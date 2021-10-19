@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <title>Train Fare Calculator</title>
+</head>
+
+<body>
+    <form onsubmit="return false">
+        <div>
+            <label for="start-station">
+                Starting station:
+                <select id="start-station" required>
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Birmingham">Birmingham</option>
+                    <option value="Leeds">Leeds</option>
+                </select>
+            </label>
+        </div>
+        <br/>
+        <div>
+            <label for="End-station">
+                Destination station:
+                <select id="end-station" required>
+                    <option value="London">London</option>
+                    <option value="Manchester">Manchester</option>
+                    <option value="Birmingham">Birmingham</option>
+                    <option value="Leeds">Leeds</option>
+                </select>
+            </label>
+        </div>
+      
+        <br/>
+        <div>
+            <label for="age">Age:
+                <input type="number" id="age" required>
+            </label>
+        </div>
+        <br/>
+        <input type="submit" id="submit" onclick="fareCalc()"> 
+    </form>
+
+    <h2 id="output"></h2>
+
+
+</body>
+
+</html>
